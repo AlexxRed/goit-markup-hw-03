@@ -58,7 +58,15 @@ body {
   color: var(--accent-color);
 }
 
+.active {
+  color: var(--accent-color);
+}
+
 .contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--maine-text-color);
 }
 
@@ -95,6 +103,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
 
 /*------features------ */
 .features-title {
@@ -127,7 +139,11 @@ body {
   color: var(--maine-title-color);
 }
 
-/*------what we do------ */
+/*------our team------ */
+
+.team {
+  background-color: #f5f4fa;
+}
 
 .team-title {
   font-weight: 700;
@@ -147,6 +163,7 @@ body {
 }
 
 .team-name {
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -158,6 +175,10 @@ body {
 
 .footer {
   background-color: #2f303a;
+}
+
+.footer-logo-secondpart {
+  color: var(--primary-white-color);
 }
 
 .footer-address {
@@ -173,6 +194,10 @@ body {
 }
 
 .footer-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--address-color);
 }
 .footer-contacts-link:hover,
@@ -194,8 +219,9 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #f5f4fa;
 }
-
 .filters-button:hover,
 .filters-button:focus {
   color: var(--primary-white-color);
