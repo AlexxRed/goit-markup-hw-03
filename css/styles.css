@@ -46,14 +46,20 @@ ul {
 }
 
 /*------header------ */
-.header {
+
+.header-nav {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 
 /*--------Logo------*/
+
 .logo {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -69,13 +75,24 @@ ul {
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
+  display: block;
   color: var(--maine-title-color);
 }
 
@@ -86,6 +103,14 @@ ul {
 
 .active {
   color: var(--accent-color);
+}
+
+.header-conacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item + .contacts-item {
+  margin-left: 50px;
 }
 
 .contacts-link {
@@ -105,28 +130,39 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  margin-bottom: 95.5px;
 }
 
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  border-color: var(--accent-color);
+
   background-color: var(--accent-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -134,11 +170,28 @@ ul {
 }
 
 /*------features------ */
+.features-list {
+  display: flex;
+}
+
+/* visibility:hidden */
 .features-title {
-  color: var(--maine-title-color);
+  visibility: hidden;
+  display: none;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+
+.features-item {
+  width: 270px;
+  margin-bottom: 94px;
 }
 
 .features-description {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -156,6 +209,8 @@ ul {
 /*------what we do------ */
 
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -164,13 +219,25 @@ ul {
   color: var(--maine-title-color);
 }
 
+.about-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*------our team------ */
 
 .team {
+  margin-bottom: 94px;
   background-color: #f5f4fa;
 }
 
 .team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -180,6 +247,8 @@ ul {
 }
 
 .team-list {
+  display: flex;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -187,12 +256,27 @@ ul {
   color: var(--maine-title-color);
 }
 
+.team-item {
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
 }
 
 .team-text {
+  margin-bottom: 30px;
+
   color: var(--maine-text-color);
 }
 
