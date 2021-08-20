@@ -155,18 +155,16 @@ img {
 /*------hero------ */
 .hero {
   display: flex;
+  text-align: center;
   padding-top: 200px;
-  padding-bottom: 199px;
+  padding-bottom: 200px;
 
   background-color: #2f303a;
-  text-align: center;
 }
 
 .hero-title {
-  display: flex;
-  align-items: stretch
-  margin-bottom: 30px;
-  
+  margin: 0 auto 30px;
+  max-width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -174,7 +172,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  text-align: center;
 }
 
 .hero-button {
@@ -404,7 +401,7 @@ img {
 
 .projects-item {
   display: block;
-  flex-basis: calc((100% - 30px) / 3) ;
+  flex-basis: calc((100% - 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
   box-sizing: border-box;
