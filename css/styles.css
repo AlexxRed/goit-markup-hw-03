@@ -3,6 +3,8 @@
   --maine-text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --maine-background-color: #f5f4fa;
+  --second-backgroud-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -73,12 +75,13 @@ img {
 
 /*------header------ */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #ececec;
 }
 
 /*--------Logo------*/
@@ -119,6 +122,8 @@ img {
 
 .header-link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--maine-title-color);
 }
 
@@ -159,7 +164,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: #2f303a;
+  background-color: var(--second-backgroud-color);
 }
 
 .hero-title {
@@ -231,7 +236,7 @@ img {
 /*------what we do------ */
 
 .about {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .about-title {
@@ -250,12 +255,13 @@ img {
 }
 .about-item:not(:last-child) {
   margin-right: 30px;
+  min-width: 370px;
 }
 
 /*------our team------ */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--maine-background-color);
 }
 
 .team-title {
@@ -280,6 +286,7 @@ img {
 }
 
 .team-item {
+  max-width: 270px;
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -289,8 +296,11 @@ img {
   margin-right: 30px;
 }
 
+.team-description {
+  padding: 30px;
+}
+
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -298,8 +308,6 @@ img {
 }
 
 .team-text {
-  margin-bottom: 30px;
-
   color: var(--maine-text-color);
 }
 
@@ -309,10 +317,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: #2f303a;
+  background-color: var(--second-backgroud-color);
 }
 
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -357,6 +366,7 @@ img {
 .filters-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filters-item:not(:last-child) {
@@ -392,8 +402,6 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-
   margin-top: -30px;
   margin-left: -30px;
   /* border: 1px solid #EEEEEE; */
@@ -405,13 +413,15 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   box-sizing: border-box;
-  border: 1px solid #eeeeee;
   overflow: hidden;
   max-width: 370px;
 }
 
 .img-content {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects-discription {
